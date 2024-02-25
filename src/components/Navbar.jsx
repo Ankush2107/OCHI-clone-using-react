@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Navbar() {
   return (
     <div className='fixed z-[999] w-full px-20 py-8 font-["Neue Montreal"] flex items-center justify-between'>
@@ -13,7 +11,7 @@ function Navbar() {
                 </svg>
       </div>
       <div className="links flex gap-10">
-        {["Services", "Our Work", "About us", "Insights", "Contact us"].map((item, index) => (
+        {["Services", "Our work", "About us", "Insights", "Contact us"].map((item, index) => (
             <a key={index} className={`text-lg font-light ${index === 4 && "ml-48"}`}>{ item }</a>
         ))}
       </div>
